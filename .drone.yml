@@ -9,8 +9,10 @@ steps:
 - name: publish
   image:  plugins/docker
   settings:
-    username: dockerhub_username
-    password: dockerhub_password
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
     repo: scrot/build-your-own-radar
     tags:
       - latest
