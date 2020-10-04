@@ -2,9 +2,16 @@ kind: pipeline
 type: kubernetes
 name: default
 
+platform:
+  arch: arm
+
 steps:
-- name: greeting
-  image: alpine
-  commands:
-  - echo hello
-  - echo world
+- name: publish
+  image:  plugins/docker
+  settings:
+    username: dockerhub_username
+    password: dockerhub_password
+    repo: scrot/byor
+    tags:
+      - latest
+      - '1.0'
