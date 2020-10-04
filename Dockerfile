@@ -3,7 +3,7 @@ WORKDIR /src/build-your-own-radar
 COPY package.json ./
 RUN npm install
 COPY . ./
-RUN npm run build
+RUN npm run build --only=prod
 
 FROM nginx:1.15.9
 WORKDIR /opt/build-your-own-radar

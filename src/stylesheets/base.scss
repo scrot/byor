@@ -348,3 +348,16 @@ body {
     }
   }
 }
+
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+ 
+#{$a-tags} {
+  color: $aab-darkyellow;
+  text-decoration: none;
+  border-bottom: 1px solid $aab-darkyellow;
+}
+#{$a-tags-hover} {
+  color: $aab-yellow;
+  border-bottom: 1px solid $aab-yellow;
+}

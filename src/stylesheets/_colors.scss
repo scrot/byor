@@ -1,8 +1,14 @@
-$green: #86b782;
-$blue: #1ebccd;
-$orange: #f38a3e;
-$violet: #b32059;
-$pink: #ee0b77;
+$aab-lightgreen: #51e9cd;
+$aab-green: #449991;
+$aab-darkgreen: #213533;
+$aab-yellow:#fbd880;
+$aab-darkyellow: #ebad12;
+
+$green: $aab-green;
+$blue: $aab-darkgreen;
+$orange: $aab-lightgreen;
+$violet: $aab-darkyellow;
+$pink: $aab-yellow;
 
 $grey-darkest: #bababa;
 $grey-dark: #cacaca;
